@@ -18,6 +18,7 @@ class Command(BaseCommand):
             url = p.find('a', itemprop='title')['href']
             title = p.find(itemprop='title').text
 
+
             alga = p.find(class_='salary-blue')
             if alga is not None:
                 alga_value = alga.get_text()
