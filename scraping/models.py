@@ -6,6 +6,8 @@ class Job(models.Model):
     url = models.CharField(max_length=250, unique=True)
     title = models.CharField(max_length=250)
     alga = models.CharField(max_length=250)
+    company = models.CharField(max_length=250)
+    location = models.CharField(max_length=250)
     created_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
