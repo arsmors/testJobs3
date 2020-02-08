@@ -2,11 +2,13 @@
    <body>
 
    {% for instance in object_list %}
-      <p>{{ instance.title }} </p>
+      <b><p>{{ instance.title }} </p></b>
       <p>{{ instance.company }} </p>
       <p>{{ instance.alga }} </p>
       <p>{{ instance.location }} </p>
-      <p>{{ instance.url }} </p>
+
+   <a href={{ instance.url }}>Link</a>
+
    <br>
    <br>
    {% endfor %}
